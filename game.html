@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<script src="test.js"></script>
+<script src="getValue.js"></script>
+<body onmousemove="bobo()">
+    <!-- <script src="getValue.js"></script> -->
+<h4 style="color:rgb(118, 85, 19); position:absolute; left: 100px; top: 100px;" id="scoreOne"></h4>
+<!-- <h4 id="scoreLikeOne"></h4> -->
+<h4 style="color:rgb(248, 225, 80); position:absolute; left: 400px; top: 100px;" id="scoreTwo"></h4>
+    <table id="tableb" class="position-absolute" style="left: 100px;">
+        <tr align="center">
+            <td id="0"  class="bgColor"><P id="1r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="1"  class="bgColor"><P id="2r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="2"  class="bgColor"><P id="3r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="3"  class="bgColor"><P id="4r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+        </tr>
+        <tr align="center">
+            <td class="noPieceHere"><P></P></td>
+            <td id="4"  class="bgColor"><P id="5r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="5"  class="bgColor"><P id="6r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="6"  class="bgColor"><P id="7r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="7"  class="bgColor"><P id="8r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            
+        </tr>
+        <tr align="center">
+            <td id="8"  class="bgColor"><P id="9r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="9"  class="bgColor"><P id="10r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="10"  class="bgColor"><P id="11r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="11"  class="bgColor" ><P id="12r" class="border rounded-circle p-3 m-2 bg-dark" onclick="getIdRed(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+        </tr>
+        <tr align="center">
+            <td class="noPieceHere"></td>
+            <td id="12" class="bgColor"></td>
+            <td class="noPieceHere"></td>
+            <td id="13" class="bgColor"></td>
+            <td class="noPieceHere"></td>
+            <td id="14" class="bgColor"></td>
+            <td class="noPieceHere"></td>
+            <td id="15" class="bgColor"></td>
+        </tr>
+        <tr align="center">
+            <td id="16" class="bgColor"></td>
+            <td class="noPieceHere"></td>
+            <td id="17" class="bgColor"></td>
+            <td class="noPieceHere"></td>
+            <td id="18" class="bgColor"></td>
+            <td class="noPieceHere"></td>
+            <td id="19" class="bgColor"></td>
+            <td class="noPieceHere"></td>
+        </tr>
+        <tr align="center">
+            <td class="noPieceHere"><P></P></td>
+            <td id="20" class="bgColor"><P id="1g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="21" class="bgColor"><P id="2g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="22" class="bgColor"><P id="3g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="23" class="bgColor"><P id="4g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+        </tr>
+        <tr align="center">
+            <td id="24" class="bgColor"><P id="5g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="25" class="bgColor"><P id="6g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="26" class="bgColor"><P id="7g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="27" class="bgColor"><P id="8g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+        </tr>
+        <tr align="center">
+            <td class="noPieceHere"><P></P></td>
+            <td id="28" class="bgColor"><P id="9g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="29" class="bgColor"><P id="10g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="30" class="bgColor"><P id="11g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+            <td class="noPieceHere"><P></P></td>
+            <td id="31" class="bgColor"><P id="12g" class="border rounded-circle p-3 m-2 bg-light" onclick="getIdGreen(this);"></P></td>
+        </tr>
+    </table>
+
+    <table id="whiteNo" style="position: absolute;left: 600px; top: 400px; border:solid 2px #584401;height: 130px; width: 420px;">
+        
+        <tr> 
+            
+            <th style="color: white;" id="turnWhite"></th>
+            <td id="1w"></td>
+            <td id="2w"></td>
+            <td id="3w"></td>
+            <td id="4w"></td>
+            <td id="5w"></td>
+            <td id="6w"></td>
+        </tr>
+        
+        <tr> 
+            <td id="7w"></td>
+            <td id="8w"></td>
+            <td id="9w"></td>
+            <td id="10w"></td>
+            <td id="11w"></td>
+            <td id="12w"></td>
+        </tr>
+        <tr>
+            <td style="color: white;" id="scoreWhite"></td>
+        </tr>
+    </table> 
+    <table id="blackNo" style="position: absolute;left: 600px; top: 160px; border:solid 1px yellow; height: 130px; width: 420px;">
+        
+        <tr> 
+            <th style="color: white;" id="turnBlack" ></th>
+            <td id="1b"></td>
+            <td id="2b"></td>
+            <td id="3b"></td>
+            <td id="4b"></td>
+            <td id="5b"></td>
+            <td id="6b"></td>
+        </tr>
+       
+        <tr> 
+            <td id="7b"></td>
+            <td id="8b"></td>
+            <td id="9b"></td>
+            <td id="10b"></td>
+            <td id="11b"></td>
+            <td id="12b"></td>
+        </tr>
+        <tr>
+            <td style="color: white;" id="scoreBlack"></td>
+        </tr>
+    </table> 
+    <p id="m">
+</p>
+    
+<script>
+    // localStorage.getItem("fname",document)
+</script>
+
+</body>
+</html>

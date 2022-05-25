@@ -1,0 +1,53 @@
+.redPieces{
+        background-color: rgb(142, 0, 0);
+        border-radius: 50%;
+        border: solid 1px rgb(255, 255, 255);
+        width: 15px;
+        height: 15px;
+        padding: 5px;
+        color: black;
+}
+.greenPiceces{
+    background-color: rgb(72, 255, 0);
+        border-radius: 50%;
+        border: solid 1px white;
+        width: 15px;
+        height: 15px;
+        padding: 5px;
+        color: rgb(0, 0, 0);
+}
+#tableb td{
+    height: 50px;
+    width: 50px;
+}
+.bgColor{
+    background-color: rgb(88, 68, 1) ;
+} 
+table{
+    border: solid 1px black;
+    position: absolute;
+    top: 20%;
+    left: 30%
+}
+#bar{
+    display: inline;
+    left: 650px;
+}
+h2{
+    position: absolute;
+    top: 85%;
+    left: 30%
+}
+.bgwhite{
+    background-color: gray !important;
+}
+.noPieceHere{
+    background-color: rgb(194, 165, 38);
+}
+body{
+    background-image: url('image/HD-wallpaper-chessboard-grunge-checkerboard-checker-checkered-textures-chess-board-grunge-chessboard.jpg');
+}
+#blackNo td, #whiteNo td{
+    height: 40px;
+    width: 70px;
+}
